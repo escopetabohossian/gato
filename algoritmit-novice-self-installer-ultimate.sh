@@ -1300,4 +1300,35 @@ echo "==================="
 echo ""
 echo "❌ 'Node.js not found':"
 echo "   • Run: sudo apt-get install nodejs npm"
-echo "   • Or visit: https://nodejs.org/
+echo "   • Or visit: https://nodejs.org/"
+echo ""
+echo "❌ 'Permission denied':"
+echo "   • Run: chmod +x *.sh"
+echo "   • Or run: bash *.sh"
+echo ""
+echo "❌ 'Application not found':"
+echo "   • Run the self-installer again"
+echo "   • Check if all files were extracted"
+echo ""
+echo "📞 SUPPORT:"
+echo "==========="
+echo "• GitHub: https://github.com/your-repo"
+echo "• Documentation: README.md"
+echo "• Issues: GitHub Issues page"
+echo ""
+echo "Press Enter to return to main menu..."
+read
+EOF
+
+    show_success "All helper scripts created successfully!"
+}
+
+# Main function
+main() {
+    show_welcome
+    create_main_application
+    show_success "Installation completed successfully!"
+}
+
+# Call main function
+main
